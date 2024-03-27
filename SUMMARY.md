@@ -3,7 +3,6 @@
 * [YimMenu](README.md)
 * [Commands](commands.md)
 * [Infraction](infraction.md)
-* [YimMenu](main.md)
 * [Tabs](tabs.md)
 * [classes](classes/README.md)
   * [Class: base\_text\_element](classes/base\_text\_element.md)

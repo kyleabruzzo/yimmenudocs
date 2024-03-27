@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file for styling -->
+    <script>
+        function toggleTheme() {
+            var body = document.body;
+            body.classList.toggle("dark-theme");
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+        }
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 60px;
+        }
+        .navbar {
+            margin-left: 250px;
+            padding: 10px;
+            background-color: #444;
+            color: white;
+        }
+        .navbar button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .content {
+            margin-left: 280px;
+            padding: 20px;
+        }
+        .nav-link {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .nav-link:hover {
+            background-color: #555;
+        }
+        .subnav {
+            display: none;
+            padding-left: 20px;
+        }
+        .subnav.active {
+            display: block;
+        }
+        .subnav .subnav {
+            padding-left: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <a href="#" class="nav-link">Classes</a>
+        <div class="subnav">
+            <a href="#base-text-element" class="nav-link">Base Text Element</a>
+            <a href="#button" class="nav-link">Button</a>
+            <a href="#checkbox" class="nav-link">Checkbox</a>
+            <a href="#inputs" class="nav-link">Inputs</a>
+            <div class="subnav">
+                <a href="#input-float" class="nav-link">Input Float</a>
+                <a href="#input-int" class="nav-link">Input Int</a>
+                <a href="#input-string" class="nav-link">Input String</a>
+            </div>
+            <!-- Add more links for other classes -->
+        </div>
+        <a href="#" class="nav-link">Tables</a>
+        <div class="subnav">
+            <a href="#command" class="nav-link">Command</a>
+            <a href="#entities" class="nav-link">Entities</a>
+            <!-- Add more links for other tables -->
+        </div>
+    </div>
+
+    <div class="navbar">
+        <button onclick="toggleTheme()">Toggle Theme</button>
+    </div>
+
+    <div class="content">
+        <!-- Your content goes here -->
+    </div>
+    
+</body>
+</html>
